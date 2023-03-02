@@ -5,7 +5,7 @@
 
 .hero__content {
   height: 480px;
-  background-image: url(../img/banner.jpg);
+  background-image: url(../img/banner-one.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -128,7 +128,6 @@
 @media (max-width: 540px) {
   .hero__content {
     height: 340px;
-    background-image: url('../img/banner-small.jpg');
     border-radius: 8px;
     text-align: center;
   }
