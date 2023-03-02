@@ -1,0 +1,163 @@
+.hero {
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+.hero__content {
+  height: 480px;
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.hero__title {
+  display: inline-block;
+  margin-bottom: 100px;
+  padding-top: 145px;
+  padding-left: 112px;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 130%;
+  color: var(--main-color, #ffffff);
+}
+
+.hero__timer {
+  max-width: 473px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--main-color, #ffffff);
+}
+
+.hero__text {
+  margin-bottom: 5px;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.time {
+  display: flex;
+  gap: 20px;
+  flex-basis: 96px;
+  justify-content: space-between;
+}
+
+.time__text {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  white-space: pre-line;
+}
+
+.time__text_big {
+  font-size: 60px;
+  line-height: 130%;
+}
+
+@media (max-width: 1366px) {
+  .hero__content {
+    height: 314px;
+    border-radius: 16px;
+  }
+
+  .hero__title {
+    margin-bottom: 63px;
+    padding-top: 80px;
+    padding-left: 80px;
+    font-size: 40px;
+  }
+
+  .hero__timer {
+    max-width: 314px;
+  }
+
+  .hero__text {
+    margin-bottom: 10px;
+  }
+
+  .time {
+    flex-basis: 65px;
+  }
+  
+  .time__text {
+    font-size: 20px;
+  }
+  
+  .time__text_big {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 950px) {
+  .hero__content {
+    height: 280px;
+  }
+
+  .hero__title {
+    margin-bottom: 82px;
+    padding-top: 64px;
+    font-size: 30px;
+  }
+
+  .hero__timer {
+    max-width: 229px;
+  }
+
+  .hero__text {
+    font-size: 12px;
+  }
+
+  .time {
+    flex-basis: 49px;
+  }
+  
+  .time__text {
+    font-size: 16px;
+  }
+  
+  .time__text_big {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero__content {
+    height: 340px;
+    background-image: url('../img/banner-small.jpg');
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .hero__title {
+    margin-bottom: 189px;
+    padding-top: 50px;
+    padding-left: 0;
+    font-size: 22px;
+  }
+
+  .hero__timer {
+    max-width: 167px;
+  }
+
+  .hero__text {
+    font-size: 8px;
+  }
+
+  .time {
+    flex-basis: 35px;
+    gap: 8px;
+  }
+  
+  .time__text {
+    font-size: 12px;
+  }
+  
+  .time__text_big {
+    font-size: 20px;
+  }
+}
