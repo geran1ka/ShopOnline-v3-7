@@ -5,7 +5,7 @@
 
 .hero__content {
   height: 480px;
-  background-image: url(../img/banner-one.jpeg);
+  background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,7 +15,7 @@
 .hero__title {
   display: inline-block;
   margin-bottom: 100px;
-  padding-top: 145px;
+  padding-top: 146px;
   padding-left: 112px;
   font-family: 'Lato';
   font-weight: 700;
@@ -32,7 +32,7 @@
 }
 
 .hero__text {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-family: 'Lato';
   font-weight: 700;
   font-size: 16px;
@@ -59,8 +59,15 @@
   line-height: 130%;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1640px) {
+
+  .hero {
+    padding-top: 27px;
+    padding-bottom: 30px;
+  }
+
   .hero__content {
+  
     height: 314px;
     border-radius: 16px;
   }
