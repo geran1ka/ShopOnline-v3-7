@@ -63,7 +63,7 @@
 
   .hero {
     padding-top: 27px;
-    padding-bottom: 30px;
+    padding-bottom: 11px;
   }
 
   .hero__content {
@@ -89,6 +89,7 @@
 
   .time {
     flex-basis: 65px;
+
   }
   
   .time__text {
@@ -97,6 +98,8 @@
   
   .time__text_big {
     font-size: 40px;
+    padding-left: 1px;
+    margin-right: 1px;
   }
 }
 
