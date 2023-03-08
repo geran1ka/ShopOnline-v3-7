@@ -63,7 +63,7 @@
 
 .card__box-1 { 
   padding-bottom: 29px;
-  background: linear-gradient(181.33deg, rgba(0, 0, 0, 0) 9.23%, rgba(0, 0, 0, 0.2) 98.87%), url(../img/block-101.jpeg) no-repeat center;
+  background: linear-gradient(181.33deg, rgba(0, 0, 0, 0) 9.23%, rgba(0, 0, 0, 0.2) 98.87%), url(../img/block-101.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -73,14 +73,14 @@
   align-items: flex-start;
   padding-top: 76px;
   padding-left: 14px;
-  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-102.jpeg) no-repeat center;
+  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-102.jpg) no-repeat center;
   background-size: cover;
 }
 
 .card__box-3 {
   align-self: end;
   max-height: 228px;
-  background: linear-gradient(180.99deg, rgba(0, 0, 0, 0) 8.18%, rgba(0, 0, 0, 0.2) 99.15%), url(../img/block-103.jpeg) no-repeat center;
+  background: linear-gradient(180.99deg, rgba(0, 0, 0, 0) 8.18%, rgba(0, 0, 0, 0.2) 99.15%), url(../img/block-103.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -89,14 +89,14 @@
   max-width: 516px;
   justify-self: end;
   padding-bottom: 21px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-104.jpeg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-104.jpg) no-repeat center;
   background-size: cover;
 }
 
 .card__box-5 {
   max-height: 228px;
   padding: 30px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-105.jpeg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-105.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -104,25 +104,25 @@
   align-self: end;
   padding: 30px;
   max-height: 228px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.28%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-106.jpeg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.28%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-106.jpg) no-repeat center;
   background-size: cover;
 }
 
 
 .card__box-7 {
   padding: 50px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-107.jpeg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-107.jpg) no-repeat center;
   background-size: cover;
 }
 
 .card__box-8 {
-  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-108.jpeg) no-repeat center;
+  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-108.jpg) no-repeat center;
   background-size: cover;
 }
 
 .card__box-9 {
   padding-bottom: 37px;
-  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-109.jpeg) no-repeat center;
+  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-109.jpg) no-repeat center;
   background-size: cover;
 }
 
