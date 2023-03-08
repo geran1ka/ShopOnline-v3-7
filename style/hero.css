@@ -6,7 +6,7 @@
 .hero__content {
   height: 480px;
   padding: 40px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner.jpg) no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner-1.jpg) no-repeat center;
   background-size: cover;
   border-radius: 20px;
 }
