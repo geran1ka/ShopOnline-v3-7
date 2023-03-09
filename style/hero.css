@@ -105,7 +105,7 @@
 
   .hero__title {
     margin-bottom: 82px;
-    padding-top: 64px;
+    padding-top: 25px;
     font-size: 30px;
   }
 
@@ -118,7 +118,7 @@
   }
 
   .time {
-    flex-basis: 49px;
+    gap: 0;
   }
   
   .time__text {

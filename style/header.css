@@ -192,17 +192,18 @@
 @media (max-width: 950px) {
   .header {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 
   .header__container {
     grid-template-columns: 2fr 3fr 3fr;
-    row-gap: 27px;
+    row-gap: 3px;
   }
 
-  .header__logo-text {
-    font-size: 26px;
-    line-height: 35px;
+  .header__logo {
+    height: 36px;
+    align-self: flex-start;
+    max-width: 165px;
   }
 
   .header__btn-menu {
@@ -231,12 +232,13 @@
   }
 
   .header__nav-list {
+    max-width: 221px;
     gap: 30px;
   }
 
   .header__nav-item {
     position: relative;
-    padding-top: 28px;
+
   }
 
   .nav-list__btn {
