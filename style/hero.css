@@ -6,8 +6,9 @@
 .hero__content {
   height: 480px;
   padding: 40px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner-1.jpg) no-repeat center;
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner-one.jpeg) no-repeat center;
+  background-size: 109% 278%;
+  background-position-x: 0px;
   border-radius: 20px;
 }
 
@@ -60,20 +61,19 @@
 @media (max-width: 1640px) {
 
   .hero {
-    padding-top: 27px;
-    padding-bottom: 30px;
+    padding-top: 24px;
+    padding-bottom: 11px;
   }
 
   .hero__content {
-  
     height: 314px;
-    border-radius: 16px;
+    border-radius: 16px; background-size: cover;
   }
 
   .hero__title {
     margin-bottom: 63px;
-    padding-top: 80px;
-    padding-left: 80px;
+    padding-top: 40px;
+    padding-left: 40px;
     font-size: 40px;
   }
 
