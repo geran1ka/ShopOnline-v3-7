@@ -196,6 +196,11 @@
   bottom: 22px;
 }
 
+.card__box-2 .card__discount_position_bottom-right {
+  right: 20px;
+  bottom: 28px;
+}
+
 @media (max-width: 1640px) {
 .cards {
   padding-top: 11px;
@@ -324,6 +329,11 @@
   }
   
   .card__discount_position_bottom-right {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .card__box-2 .card__discount_position_bottom-right {
     right: 10px;
     bottom: 10px;
   }
