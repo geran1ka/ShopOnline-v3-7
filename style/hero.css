@@ -53,7 +53,7 @@
   white-space: pre-line;
 }
 
-.time__text_big {
+.time__text-big {
   font-size: 60px;
   line-height: 130%;
 }
@@ -93,7 +93,7 @@
     font-size: 20px;
   }
   
-  .time__text_big {
+  .time__text-big {
     font-size: 40px;
   }
 }
@@ -125,7 +125,7 @@
     font-size: 16px;
   }
   
-  .time__text_big {
+  .time__text-big {
     font-size: 30px;
   }
 }
@@ -169,7 +169,7 @@
     font-size: 12px;
   }
   
-  .time__text_big {
+  .time__text-big {
     font-size: 20px;
   }
 }

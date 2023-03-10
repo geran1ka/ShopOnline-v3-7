@@ -21,7 +21,7 @@
   grid-column: span 2;
 }
 
-.card__item_box {
+.cards__item-box {
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 1fr));
   grid-template-rows: repeat(2, minmax(228px, 1fr));
@@ -170,7 +170,7 @@
   border-radius: inherit;
 }
 
-
+/*------------------------Скидка--------------------*/
 .card__discount {
   position: absolute;
   padding: 24px 8px;
@@ -184,17 +184,19 @@
   background-color: var(--orange-color, #ffbd13);
 }
 
-.card__discount_position_top-left {
+.card__discount_position_top-left,
+.card__discount_position-box-9 {
   top: 20px;
   left: 20px;
 }
 
-.card__discount_position_bottom-right {
+.card__discount_position_bottom-right,
+.card__discount_position-box-8 {
   right: 20px;
   bottom: 22px;
 }
 
-.card__box-2 .card__discount_position_bottom-right {
+.card__discount_position-box-2 {
   right: 20px;
   bottom: 28px;
 }
@@ -211,21 +213,22 @@
     column-gap: 30px;
   }
 
-  .card__item_box {
+  .cards__item-box {
     grid-template-columns: repeat(2, minmax(156px, 1fr));
     grid-template-rows: repeat(2, minmax(156px, 1fr));
     column-gap: 60px;
     row-gap: 22px;
   }
+
   .cards__item:nth-child(4) {
     order: 5;
   }
 
-  .card__item_box:first-child {
+  .cards__item-box-one {
     row-gap: 4px;
   }
 
-  .card__item_box-asymm {
+  .cards__item-box-five {
     row-gap: 18px;
     column-gap: 34px;
   }
@@ -270,8 +273,6 @@
   .card__box-8 {
     background-size: cover;
     background-position-y: 9%;
-
-
   }
   
   .card__box-9 {
@@ -280,7 +281,6 @@
     padding-left: 5px;
     padding-right: 2px;
     padding-bottom: 18px;
- 
   }
 
   .card__box-10 {
@@ -312,6 +312,7 @@
   .card__subitle_weigt_bold {
     font-weight: 700;
   }
+
   .card__subitle_box-4 {
     padding: 23px 24px 34px;
     font-size: 30px;
@@ -339,17 +340,17 @@
     bottom: 10px;
   }
 
-  .card__box-2 .card__discount_position_bottom-right {
+  .card__discount_position-box-2 {
     right: 10px;
     bottom: 10px;
   }
 
-  .card__box-8 .card__discount_position_bottom-right {
+  .card__discount_position-box-8 {
     right: 22px;
     bottom: 10px;
   }
 
-  .card__box-9 .card__discount_position_top-left {
+  .card__discount_position-box-9 {
     top: 10px;
     left: 6px;
   }
@@ -367,19 +368,23 @@
     column-gap: 21px;
   }
 
-  .card__item_box {
+  .cards__item-box {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
     grid-template-rows: repeat(2, minmax(100px, 1fr));
     column-gap: 40px;
     row-gap: 22px;
   }
 
-  .card {
-    border-radius: 12px;
+  .cards__item-box-five {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, minmax(83, 1fr));
+    column-gap: 0px;
+    max-height: 171px;  
+    align-self: center;
   }
 
-  .card__item_box:first-child {
-    row-gap: 21px;
+  .card {
+    border-radius: 12px;
   }
 
   .card__box-1 {
@@ -412,15 +417,6 @@
     padding-bottom: 26px;
     padding-left: 26px;
     background-position-y: 72%;
-  }
-
-
-  .card__item_box-asymm {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, minmax(83, 1fr));
-    column-gap: 0px;
-    max-height: 171px;  
-    align-self: center;
   }
 
   .card__box-8 {
@@ -499,7 +495,6 @@
     border-radius: inherit;
   }
 
-
   .card__discount {
     padding: 13px 7px;
     width: 50px;
@@ -517,19 +512,19 @@
     bottom: 9px;
   }
 
-  .card__box-8 .card__discount_position_bottom-right {
+  .card__discount_position-box-8 {
     right: 10px;
     bottom: 10px;
 }
 
-.card__box-9 .card__discount {
-  width: 36px;
-  height: 36px;
-  padding: 9px 4px;
-  font-size: 12px;
-  top: 4px;
-  left: 2px;
-}
+  .card__discount_position-box-9 {
+    width: 36px;
+    height: 36px;
+    padding: 9px 4px;
+    font-size: 12px;
+    top: 4px;
+    left: 2px;
+  }
 
 }
 
@@ -544,8 +539,8 @@
     row-gap: 20px;
   }
 
-  .card__item_box,
-  .card__item_box-asymm  {
+  .cards__item-box,
+  .cards__item-box-five  {
     max-height: 280px;
     grid-template-columns: repeat(2, minmax(130px, 1fr));
     grid-template-rows: repeat(2, minmax(118px, 1fr));
@@ -554,9 +549,7 @@
     border-radius: 8px;
   }
 
-  .card__item_box-asymm 
-
-  .card__item_box:last-child {
+  .cards__item-box:last-child {
     row-gap: 20px;
     column-gap: 22px;
   }
@@ -673,12 +666,7 @@
     bottom: 5px;
   }
 
-  .card__box-2 .card__discount_position_bottom-right {
-    right: 5px;
-    bottom: 5px;
-  }
-
-  .card__box-9 .card__discount {
+  .card__discount_position-box-9 {
     padding: 13px 7px;
     width: 50px;
     height: 50px;
