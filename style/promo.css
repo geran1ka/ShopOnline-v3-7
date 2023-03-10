@@ -78,7 +78,7 @@
   padding-bottom: 21px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-4.jpg) no-repeat center;
   background-size: 107% 144%;
-  background-position-x: 2px;
+  background-position-x: -7%;
 }
 
 .card__box-5 {
@@ -86,7 +86,7 @@
   padding: 30px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-5.jpg) no-repeat center;
   background-size: cover;
-  background-position-y: -90px;
+  background-position-y: 63%;
 }
 
 .card__box-6 {
@@ -95,14 +95,14 @@
   max-height: 228px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.28%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-6.jpg) no-repeat center;
   background-size: cover;
-  background-position-y: -77px;
+  background-position-y: 56%;
 }
 
 .card__box-7 {
   padding: 50px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-7.jpg) no-repeat center;
   background-size: cover;
-  background-position-y: -207px;
+  background-position-y: 59%;
 }
 
 .card__box-8 {
@@ -114,7 +114,7 @@
   padding-bottom: 37px;
   background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-9.jpg) no-repeat center;
   background-size: cover;
-  background-position-x: -89px;
+  background-position-x: 72%;
 }
 
 .card__box-10 {
@@ -243,7 +243,7 @@
   }
 
   .card__box-3 {
-    background-position-y: -86px;
+    background-position-y: 63%;
     background-size: 100% 161%;
   }
 
@@ -254,12 +254,10 @@
   .card__box-5 {
     padding-right: 50px;
     padding-bottom: 28px;
-    background-position-y: -75px;
   }
   
   .card__box-6 {
     padding-bottom: 36px;
-    background-position-y: -64px;
   }
   
   .card__box-7 {
@@ -267,13 +265,12 @@
     align-self: self-end;
     padding-bottom: 38px;
     padding-left: 30px;
-    background-position-y: -170px;
   }
   
   .card__box-8 {
     background-size: cover;
     background-position-y: 9%;
-    background-position-x: -61px;
+
 
   }
   
@@ -283,7 +280,7 @@
     padding-left: 5px;
     padding-right: 2px;
     padding-bottom: 18px;
-    background-position-x: -72px;
+ 
   }
 
   .card__box-10 {
@@ -391,11 +388,9 @@
 
   .card__box-2 {
     padding: 15px 6px;
-    background-position-x: -33px;
   }
 
   .card__box-3 {
-    background-position-y: -48px;
     background-size: 98% 160%;
   }
   
@@ -403,24 +398,20 @@
     min-height: 380px;
     padding: 10px 7px;
     background-size: 101% 125%;
-    background-position-x: -3px;
   }
 
   .card__box-5 {
     padding: 19px 75px 19px 21px;
-    background-position-y: -49px;
   }
 
   .card__box-6 {
     padding: 20px 21px;
-    background-position-y: -42px;
   }
 
   .card__box-7 {
     padding-bottom: 26px;
     padding-left: 26px;
-
-    background-position-y: -134px;
+    background-position-y: 72%;
   }
 
 
@@ -436,7 +427,6 @@
     max-height: 171px;
     max-width: 253px;
     align-self: flex-end;
-    background-position-x: -2px;
   }
 
   .card__box-9 {
@@ -446,7 +436,6 @@
     padding: 11px 2px;
     justify-self: center;
     align-self: flex-end;
-    background-position-x: -23px;
   }
 
   .card__box-10 {
@@ -608,32 +597,28 @@
     max-height: 118px;
     padding-bottom: 16px;
     padding-left: 10px;
-    background-position-y: -45px;
   }
   
   .card__box-6 {
     max-height: 118px;
     padding-bottom: 16px;
     padding-left: 10px;
-    background-position-y: -45px;
   }
   
   .card__box-7 {
     padding: 11px 15px;
-    background-position-y: -58px;
-
+    background-position-y: 64%;
   }
   
   .card__box-8 {
     min-height: 280px;
-    background-position-x: -47px;
   }
   
   .card__box-9 {
     max-height: 130px;
     max-width: 130px;
     align-self: flex-start;
-    background-position-x: -32px;
+    background-position-x: 51%;
   }
 
   .card__box-10 {
