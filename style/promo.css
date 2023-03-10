@@ -21,7 +21,9 @@
   grid-column: span 2;
 }
 
-.cards__item-box {
+.cards__item-box-one,
+.cards__item-box-three,
+.cards__item-box-five {
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 1fr));
   grid-template-rows: repeat(2, minmax(228px, 1fr));
@@ -156,18 +158,27 @@
 
 .card__subitle_box-5 {
   font-size: 40px;
+  font-weight: 700;
 }
 
 .card__subitle_box-6 {
   font-size: 40px;
+  font-weight: 700;
 }
 
 .card__subitle_box-7 {
   padding: 30px 40px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
   color: var(--pink-color, #f91155);
   text-transform: uppercase;
   background-color:var(--main-color, #ffffff);
   border-radius: inherit;
+}
+
+.card__subitle_box-9 {
+  font-weight: 700;
 }
 
 /*------------------------Скидка--------------------*/
@@ -213,14 +224,16 @@
     column-gap: 30px;
   }
 
-  .cards__item-box {
+  .cards__item-box-one,
+  .cards__item-box-three,
+  .cards__item-box-five {
     grid-template-columns: repeat(2, minmax(156px, 1fr));
     grid-template-rows: repeat(2, minmax(156px, 1fr));
     column-gap: 60px;
     row-gap: 22px;
   }
 
-  .cards__item:nth-child(4) {
+  .cards__item-box-four {
     order: 5;
   }
 
@@ -328,8 +341,15 @@
   
   .card__subitle_box-7 {
     padding: 24px 47px;
+    font-size: 30px;
   }
 
+
+  .card__subitle_box-9 {
+    font-size: 20px;
+  }
+
+/*-----------------------------Скидки----------------------*/
   .card__discount_position_top-left {
     top: 18px;
     left: 10px;
@@ -388,12 +408,20 @@
     grid-row: span 4;
   }
 
-  .cards__item-box {
+  .cards__item-box-one,
+  .cards__item-box-three {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(126px, 1fr));
     column-gap: 40px;
     row-gap: 22px;
   }
+
+  .cards__item-box-five {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, minmax(83px, 1fr));
+    gap: 0;
+  }
+
 
   .card {
     border-radius: 12px;
@@ -427,16 +455,10 @@
     padding: 23px 22px;
   }
 
-  .cards__item-box-five {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, minmax(83, 1fr));
-    gap: 8px 0;
-  }
-
   .card__box-7 {
     max-height: 337px;
     align-self: flex-end;
-    padding-bottom: 26px;
+    padding-bottom: 29px;
     padding-left: 26px;
     background-position-y: 72%;
   }
@@ -453,7 +475,8 @@
     align-self: flex-end;
     justify-self: center;
     padding: 11px 2px;
-    margin-bottom: -3px;
+    margin-left: -3px;
+    margin-bottom: -1px;
   }
 
   .card__box-10 {
@@ -461,7 +484,8 @@
     max-width: 82px;
     align-self: flex-end;
     justify-self: center;
-    margin-bottom: 3px
+    margin-left: -3px;
+    margin-bottom: 3px;
   }
 
 /*---------------------------ТЕКСТ---------------*/
@@ -510,12 +534,16 @@
   }
   
   .card__subitle_box-7 {
-    padding: 22px 34px;
+    padding: 23px 34px;
     font-size: 20px;
     color: var(--pink-color, #f91155);
     text-transform: uppercase;
     background-color:var(--main-color, #ffffff);
     border-radius: inherit;
+  }
+
+  .card__subitle_box-9 {
+    font-size: 12px;
   }
 
   .card__discount {
@@ -584,7 +612,8 @@
     grid-row: span 1;
   }
 
-  .cards__item-box,
+  .cards__item-box-one,
+  .cards__item-box-three,
   .cards__item-box-five  {
     max-height: 280px;
     grid-template-columns: repeat(2, minmax(130px, 1fr));
@@ -594,14 +623,8 @@
     border-radius: 8px;
   }
 
-  .cards__item-box:last-child {
-    row-gap: 20px;
-    column-gap: 22px;
-  }
-
   .cards__item_size_two-colums {
     grid-column: span 1;
-  
   }
 
   .card {
@@ -624,11 +647,9 @@
     align-self: flex-end;
   }
   
-  
   .card__box-4 {
     min-height: 280px;
     padding: 10px;
-
   }
   
   .card__box-5 {
@@ -655,7 +676,8 @@
   .card__box-9 {
     max-height: 130px;
     max-width: 130px;
-  
+    margin-bottom: 0;
+    margin-left: 0;
     align-self: flex-start;
     background-position-x: 51%;
   }
@@ -664,6 +686,7 @@
     max-height: 130px;
     max-width: 130px;
     margin-bottom: 0;
+    margin-left: 0;
   }
   /*-----------------------------------------Текст-----------------------*/
 
