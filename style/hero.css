@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .hero {
     padding-bottom: 10px;
   }
