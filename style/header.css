@@ -25,29 +25,13 @@
   padding: 3px 0;
 }
 
-/*
-.header__logo-text {
-  font-family: 'Open Sans';
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 41px;
-  letter-spacing: 0.06em;
-  color: var(--second-color, #2d2d2d);
-}
-
-.header__logo-text_color {
-  color: var(--blue-color, #3670c7)
-}
-*/
-
 .header__link-menu {
   position: relative;
   justify-self: center;
   grid-area: menu;
   max-width: 151px;
-
   padding: 10px 32px 11px 58px;
-  font-family: 'Lato', Ariar, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 150%; 
@@ -67,7 +51,6 @@
   height: 24px;
   background-image: url('../img/sort.svg');
   background-repeat: no-repeat;
-
 }
 
 .header__form {
@@ -90,7 +73,6 @@
   border: none;
   border-radius: 30px;
   background-color: var(--main-bg-color);
-
 }
 
 .form__input::placeholder {
@@ -135,7 +117,7 @@
 }
 
 .nav-list__text {
-  font-family: 'Lato', Ariar, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
@@ -182,7 +164,6 @@
 
   .form__input {
     padding-left: 40px;
-
   }
 
   .form__btn {
@@ -213,7 +194,6 @@
     padding: 8px 22px 10px 49px;
     font-size: 16px;
     border-radius: 6px;
-
   }
 
   .header__link-menu::before {
@@ -227,7 +207,6 @@
 
   .form__btn {
     padding: 6px 26px;
-
   }
 
   .btn__search {
@@ -242,7 +221,6 @@
 
   .header__nav-item {
     position: relative;
-
   }
 
   .nav-list__btn {
@@ -276,33 +254,40 @@
 @media (max-width: 540px) {
   .header {
     padding-top: 20px;
-    padding-bottom: 21px;
+    padding-bottom: 16px;
   }
 
   .header__container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 20px;
+    row-gap: 0;
     grid-template-areas: 
       "logo ."
       "menu nav"
       "search search";
     align-items: self-end;
+    height: 125px;
   }
 
-  .header__logo-text {
-    font-size: 18px;
-    line-height: 25px;
+  .header__logo {
+    max-width: 114px;
+    height: 29px;
+    align-self: flex-start;
   }
 
-  .header__btn-menu {
-    align-self: center;
-    padding: 5px 14px 7px 31px;
+  .header__link-menu {
+    max-width: 79px;
+    align-self: flex-start;
+    padding: 7px 14px 7px 31px;
     font-size: 12px;
     border-radius: 4px;
   }
 
-  .header__btn-menu::before {
+  .header__form {
+    align-self: flex-end;
+  }
+
+  .header__link-menu::before {
     left: 14px;
     height: 16px;
     width: 16px;
@@ -310,8 +295,9 @@
   }
 
   .header__nav-list {
+    max-width: 130px;
     align-items: center;
-    gap: 20px;
+    gap: 19px;
   }
 
   .header__nav-item {

@@ -15,12 +15,10 @@
 
 .cards__item {
   display: grid;
-
 }
 
 .cards__item_size_two-colums {
   grid-column: span 2;
-
 }
 
 .card__item_box {
@@ -30,8 +28,6 @@
   column-gap: 60px;
   row-gap: 26px;
 }
-
-
 
 .card_size_two-rows {
   grid-row: span 2;
@@ -60,8 +56,6 @@
   background-size: cover;
 }
 
-
-
 .card__box-2 {
   align-items: flex-start;
   padding-top: 76px;
@@ -77,7 +71,6 @@
   background-size: cover;
   background-position-y: 65%;
 }
-
 
 .card__box-4 {
   max-width: 516px;
@@ -105,7 +98,6 @@
   background-position-y: -77px;
 }
 
-
 .card__box-7 {
   padding: 50px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-7.jpg) no-repeat center;
@@ -125,7 +117,6 @@
   background-position-x: -89px;
 }
 
-
 .card__box-10 {
   background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-110.jpg) no-repeat center;
   background-size: cover;
@@ -133,7 +124,7 @@
 
 /*------------------------ТЕКСТ ВНУТРИ КАРТОЧЕК--------------------*/
 .card__subitle {
-  font-family: 'Lato';
+  font-family: 'Lato', Arial, sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 130%;
@@ -181,7 +172,6 @@
 
 
 .card__discount {
-  
   position: absolute;
   padding: 24px 8px;
   width: 88px;
@@ -468,7 +458,6 @@
 
 /*---------------------------ТЕКСТ---------------*/
   .card__subitle {
-    font-family: 'Lato', Arial, sans-serif;
     font-size: 20px;
     line-height: 110%;
 
@@ -494,7 +483,7 @@
     font-weight: 700;
   }
 
-  .card__box-2 .card__subitle {
+  .card__subitle_box-2 {
     font-size: 16px;
     line-height: 130%;
   }
@@ -553,24 +542,30 @@
   left: 2px;
 }
 
-
-
-
 }
 
 @media (max-width: 540px) {
+  .cards {
+    padding-top: 10px;
+  }
+
   .cards__list {
     grid-template-columns: 280px;
     grid-template-rows:   268px 280px 254px 280px 123px;
     row-gap: 20px;
   }
 
-  .card__item_box {
-    grid-template-columns: repeat(2, minmax(118px, 1fr));
+  .card__item_box,
+  .card__item_box-asymm  {
+    max-height: 280px;
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
     grid-template-rows: repeat(2, minmax(118px, 1fr));
     column-gap: 20px;
     row-gap: 20px;
+    border-radius: 8px;
   }
+
+  .card__item_box-asymm 
 
   .card__item_box:last-child {
     row-gap: 20px;
@@ -582,43 +577,128 @@
   
   }
 
-  .card__box-1 { 
+  .card {
+    border-radius: 8px;
+  }
 
+  .card__box-1 { 
+    min-height: 130px;
+    padding-bottom: 11px;
+    padding-right: 34px;
   }
   
   .card__box-2 {
-
+    min-height: 130px;
+    padding: 30px 10px
   }
   
   .card__box-3 {
-
+    max-height: 118px;
+    align-self: flex-end;
   }
   
   
   .card__box-4 {
+    min-height: 280px;
+    padding: 10px;
 
   }
   
   .card__box-5 {
-
+    max-height: 118px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    background-position-y: -45px;
   }
   
   .card__box-6 {
-
+    max-height: 118px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    background-position-y: -45px;
   }
   
   .card__box-7 {
+    padding: 11px 15px;
+    background-position-y: -58px;
 
   }
   
   .card__box-8 {
+    min-height: 280px;
+    background-position-x: -47px;
   }
   
   .card__box-9 {
-
+    max-height: 130px;
+    max-width: 130px;
+    align-self: flex-start;
+    background-position-x: -32px;
   }
 
   .card__box-10 {
+    max-height: 130px;
+    max-width: 130px;
+  }
+  /*-----------------------------------------Текст-----------------------*/
 
+  .card__subitle {
+    font-size: 12px;
+  }
+
+  .card__subitle_size_text-small {
+    font-size: px;
+  }
+  
+  .card__subitle_size_text-medium {
+    font-size: 16px;
+  }
+  
+  .card__subitle_size_text-large {
+    font-size: 16px;
+  }
+  
+  .card__subitle_size_text-line-heigth {
+    line-height: 120%;
+  }
+
+  .card__subitle_box-2 {
+    font-weight: 700;
+  }
+
+  .card__subitle_box-4 {
+    padding-bottom: 11px;
+    padding-top: 6px;
+    padding-right: 23px;
+  }
+
+  .card__subitle_box-7 {
+    font-size: 12px;
+    padding: 8px 41px;
+  }
+  
+
+  .card__discount_position_top-left {
+    top: 5px;
+    left: 5px;
+  }
+  
+  .card__discount_position_bottom-right {
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .card__box-2 .card__discount_position_bottom-right {
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .card__box-9 .card__discount {
+    padding: 13px 7px;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    top: 5px;
+    left: 5px;
   }
 }

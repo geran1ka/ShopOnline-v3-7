@@ -16,7 +16,7 @@
   margin-bottom: 100px;
   padding-top: 106px;
   padding-left: 72px;
-  font-family: 'Lato', Ariar, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   font-weight: 700;
   font-size: 70px;
   line-height: 130%;
@@ -32,7 +32,7 @@
 
 .hero__text {
   margin-bottom: 3px;
-  font-family: 'Lato', Ariar, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
@@ -46,7 +46,7 @@
 }
 
 .time__text {
-  font-family: 'Lato', Ariar, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 130%;
@@ -131,14 +131,21 @@
 }
 
 @media (max-width: 540px) {
-  .hero__content {
-    height: 340px;
-    border-radius: 8px;
-    text-align: center;
+  .hero {
+    padding-bottom: 10px;
   }
 
+  .hero__content {
+    height: 340px;
+    padding: 2px;
+    border-radius: 8px;
+    text-align: center;
+    background-position-x: -100px;
+  }
+
+
   .hero__title {
-    margin-bottom: 189px;
+    margin-bottom: 187px;
     padding-top: 50px;
     padding-left: 0;
     font-size: 22px;
@@ -149,6 +156,7 @@
   }
 
   .hero__text {
+    margin-bottom: 4px;
     font-size: 8px;
   }
 
