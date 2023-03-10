@@ -56,7 +56,7 @@
 
 .card__box-1 { 
   padding-bottom: 29px;
-  background: linear-gradient(181.33deg, rgba(0, 0, 0, 0) 9.23%, rgba(0, 0, 0, 0.2) 98.87%), url(../img/block-101.jpg) no-repeat center;
+  background: linear-gradient(181.33deg, rgba(0, 0, 0, 0) 9.23%, rgba(0, 0, 0, 0.2) 98.87%), url(../img/block-1.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -66,7 +66,7 @@
   align-items: flex-start;
   padding-top: 76px;
   padding-left: 14px;
-  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-102.jpg) no-repeat center;
+  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-2.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -83,30 +83,34 @@
   max-width: 516px;
   justify-self: end;
   padding-bottom: 21px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-104.jpg) no-repeat center;
-  background-size: cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-4.jpg) no-repeat center;
+  background-size: 107% 144%;
+  background-position-x: 2px;
 }
 
 .card__box-5 {
   max-height: 228px;
   padding: 30px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-105.jpg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-5.jpg) no-repeat center;
   background-size: cover;
+  background-position-y: -90px;
 }
 
 .card__box-6 {
   align-self: end;
   padding: 30px 30px 38px;
   max-height: 228px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.28%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-106.jpg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.28%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-6.jpg) no-repeat center;
   background-size: cover;
+  background-position-y: -77px;
 }
 
 
 .card__box-7 {
   padding: 50px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-107.jpg) no-repeat center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-7.jpg) no-repeat center;
   background-size: cover;
+  background-position-y: -207px;
 }
 
 .card__box-8 {
@@ -116,8 +120,9 @@
 
 .card__box-9 {
   padding-bottom: 37px;
-  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-109.jpg) no-repeat center;
+  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-9.jpg) no-repeat center;
   background-size: cover;
+  background-position-x: -89px;
 }
 
 
@@ -126,9 +131,9 @@
   background-size: cover;
 }
 
+/*------------------------ТЕКСТ ВНУТРИ КАРТОЧЕК--------------------*/
 .card__subitle {
   font-family: 'Lato';
-  font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 130%;
@@ -150,10 +155,20 @@
 .card__subitle_weigt_bold {
   font-weight: 700;
 }
+
 .card__subitle_box-4 {
   padding: 24px 20px 25px;
+  font-size: 40px;
   background-color:#38c0eb;
   border-radius: inherit;
+}
+
+.card__subitle_box-5 {
+  font-size: 40px;
+}
+
+.card__subitle_box-6 {
+  font-size: 40px;
 }
 
 .card__subitle_box-7 {
@@ -238,8 +253,8 @@
   }
 
   .card__box-3 {
-    background-position-y: 61%;
-    background-size: 100% 166%;
+    background-position-y: -86px;
+    background-size: 100% 161%;
   }
 
   .card__box-4 {
@@ -249,10 +264,12 @@
   .card__box-5 {
     padding-right: 50px;
     padding-bottom: 28px;
+    background-position-y: -75px;
   }
   
   .card__box-6 {
     padding-bottom: 36px;
+    background-position-y: -64px;
   }
   
   .card__box-7 {
@@ -260,11 +277,14 @@
     align-self: self-end;
     padding-bottom: 38px;
     padding-left: 30px;
+    background-position-y: -170px;
   }
   
   .card__box-8 {
     background-size: cover;
     background-position-y: 9%;
+    background-position-x: -61px;
+
   }
   
   .card__box-9 {
@@ -273,6 +293,7 @@
     padding-left: 5px;
     padding-right: 2px;
     padding-bottom: 18px;
+    background-position-x: -72px;
   }
 
   .card__box-10 {
@@ -280,9 +301,9 @@
     justify-self: self-end;
   }
 
+  /*-------------------------------------------ТЕКСТ----------------------*/
   .card__subitle {
     font-size: 24px;
-
   }
 
   .card__subitle_size_text-small {
@@ -306,6 +327,15 @@
   }
   .card__subitle_box-4 {
     padding: 23px 24px 34px;
+    font-size: 30px;
+  }
+
+  .card__subitle_box-5 {
+    font-size: 30px;
+  }
+
+  .card__subitle_box-6 {
+    font-size: 30px;
   }
   
   .card__subitle_box-7 {
@@ -336,20 +366,18 @@
     top: 10px;
     left: 6px;
   }
-  
-  
 }
-
+/*-----------------------------------------------------------*/
 @media (max-width: 950px) {
   .cards {
     padding-top: 29px;
   }
 
   .cards__list {
-    grid-template-columns: 1fr 380px;
+    grid-template-columns: 4fr 5fr;
     grid-template-rows:   278px 274px 337px;
     row-gap: 22px;
-    column-gap: 20px;
+    column-gap: 21px;
   }
 
   .card__item_box {
@@ -373,19 +401,36 @@
 
   .card__box-2 {
     padding: 15px 6px;
+    background-position-x: -33px;
+  }
+
+  .card__box-3 {
+    background-position-y: -48px;
+    background-size: 98% 160%;
   }
   
   .card__box-4 {
     min-height: 380px;
-    padding: 10px;
+    padding: 10px 7px;
+    background-size: 101% 125%;
+    background-position-x: -3px;
   }
 
   .card__box-5 {
-    padding: 19px 73px 19px 21px;
+    padding: 19px 75px 19px 21px;
+    background-position-y: -49px;
   }
 
   .card__box-6 {
     padding: 20px 21px;
+    background-position-y: -42px;
+  }
+
+  .card__box-7 {
+    padding-bottom: 26px;
+    padding-left: 26px;
+
+    background-position-y: -134px;
   }
 
 
@@ -401,6 +446,7 @@
     max-height: 171px;
     max-width: 253px;
     align-self: flex-end;
+    background-position-x: -2px;
   }
 
   .card__box-9 {
@@ -410,7 +456,7 @@
     padding: 11px 2px;
     justify-self: center;
     align-self: flex-end;
-
+    background-position-x: -23px;
   }
 
   .card__box-10 {
@@ -420,7 +466,7 @@
     justify-self: center;
   }
 
-
+/*---------------------------ТЕКСТ---------------*/
   .card__subitle {
     font-family: 'Lato', Arial, sans-serif;
     font-size: 20px;
@@ -433,7 +479,7 @@
   }
   
   .card__subitle_size_text-medium {
-    font-size: 16px;
+    font-size: 26px;
   }
   
   .card__subitle_size_text-large {
@@ -454,11 +500,21 @@
   }
 
   .card__subitle_box-4 {
-    padding: 13px 30px 18px 26px;
+    padding: 12px 30px 18px 27px;
+    font-size: 16px;
+  }
+
+  .card__subitle_box-5 {
+    font-size: 16px;
+  }
+
+  .card__subitle_box-6 {
+    font-size: 16px;
   }
   
   .card__subitle_box-7 {
-    padding: 30px 40px;
+    padding: 22px 34px;
+    font-size: 20px;
     color: var(--pink-color, #f91155);
     text-transform: uppercase;
     background-color:var(--main-color, #ffffff);

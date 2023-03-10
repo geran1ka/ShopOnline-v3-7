@@ -153,7 +153,7 @@
     grid-template-columns: 3fr 5fr 4fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-      "logo . nav"
+      "logo logo nav"
       "menu search search";
     column-gap: 10px;
     row-gap: 29px;
@@ -161,6 +161,7 @@
 
 
   .header__logo {
+    max-width: 190px;
     padding-bottom: 6px;
   }
 
@@ -192,27 +193,30 @@
 @media (max-width: 950px) {
   .header {
     padding-top: 25px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
   }
 
   .header__container {
-    grid-template-columns: 2fr 3fr 3fr;
-    row-gap: 3px;
+    grid-template-columns: 2fr 4fr 3fr;
+    row-gap: 26px;
   }
 
   .header__logo {
-    height: 36px;
-    align-self: flex-start;
     max-width: 165px;
+    height: 36px;
+    align-self: center;
+    padding: 5px 0;
   }
 
-  .header__btn-menu {
+  .header__link-menu {
+    max-width: 115px;
     padding: 8px 22px 10px 49px;
     font-size: 16px;
     border-radius: 6px;
+
   }
 
-  .header__btn-menu::before {
+  .header__link-menu::before {
     left: 21px;
   }
 
@@ -249,6 +253,18 @@
     margin-bottom: 0;
     height: 30px;
     width: 30px;
+  }
+
+  .header__navigation {
+    align-self: flex-start;
+  }
+
+  .nav-list__link {
+    gap: 0;
+  }
+
+  .nav-list__svg {
+    height: 30px;
   }
 
   .nav-list__text {
