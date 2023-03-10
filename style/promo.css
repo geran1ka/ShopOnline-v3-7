@@ -212,7 +212,7 @@
   bottom: 28px;
 }
 
-@media (max-width: 1640px) {
+@media (max-width: 1440px) {
 .cards {
   padding-top: 11px;
 }
@@ -304,10 +304,6 @@
   /*-------------------------------------------ТЕКСТ----------------------*/
   .card__subitle {
     font-size: 24px;
-  }
-
-  .card__subitle_size_text-small {
-    font-size: 20px;
   }
   
   .card__subitle_size_text-medium {
@@ -422,7 +418,6 @@
     gap: 0;
   }
 
-
   .card {
     border-radius: 12px;
   }
@@ -495,10 +490,6 @@
 
   }
 
-  .card__subitle_size_text-small {
-    font-size: 12px;
-  }
-  
   .card__subitle_size_text-medium {
     font-size: 26px;
   }
@@ -692,10 +683,6 @@
 
   .card__subitle {
     font-size: 12px;
-  }
-
-  .card__subitle_size_text-small {
-    font-size: px;
   }
   
   .card__subitle_size_text-medium {
