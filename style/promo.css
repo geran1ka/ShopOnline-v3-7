@@ -1,6 +1,6 @@
 .cards {
   padding-top: 30px;
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
 .cards__list {
@@ -371,7 +371,7 @@
 
   .cards__list {
     grid-template-columns: 4fr 5fr;
-    grid-template-rows:   repeat(12, 48px) 360px;
+    grid-template-rows:   repeat(12, 48px) 357px;
     row-gap: 0px;
     column-gap: 20px;
   }
@@ -379,6 +379,7 @@
   .cards__item-box-one {
     max-height: 278px;
     grid-row: span 6;
+
   }
 
   .cards__item-box-three {
@@ -401,13 +402,22 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(126px, 1fr));
     column-gap: 40px;
+  }
+
+  .cards__item-box-one {
+    row-gap: 19px;
+  }
+
+  .cards__item-box-three {
     row-gap: 22px;
+    margin-bottom: 2px;
   }
 
   .cards__item-box-five {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, minmax(83px, 1fr));
     gap: 0;
+    margin-bottom: 2px;
   }
 
   .card {
@@ -424,16 +434,20 @@
 
   .card_box-3 {
     max-height: 126px;
+    background-position-y: 64%;
+    background-size: 99% 161%;
   }
 
   .card_box-4 {
     padding: 10px 7px;
     background-size: 101% 125%;
+    background-position-x: 75%;
   }
 
   .card_box-5 {
     max-height: 126px;
     padding: 19px 75px 21px 21px;
+    background-position-y: 67%;
   }
 
   .card_box-6 {
@@ -445,13 +459,13 @@
   .card_box-7 {
     max-height: 337px;
     align-self: flex-end;
-    padding-bottom: 29px;
+    padding-bottom: 26px;
     padding-left: 26px;
     background-position-y: 72%;
   }
 
   .card_box-8 {
-    max-height: 174px;
+    max-height: 172px;
     align-self: flex-end;
     justify-self: center;
   }
@@ -463,7 +477,8 @@
     justify-self: center;
     padding: 11px 2px;
     margin-left: -3px;
-    margin-bottom: -1px;
+    margin-bottom: -3px;
+    background-position-x: 44%;
   }
 
   .card_box-10 {
@@ -472,7 +487,7 @@
     align-self: flex-end;
     justify-self: center;
     margin-left: -3px;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
   }
 
 /*---------------------------ТЕКСТ---------------*/
@@ -526,17 +541,17 @@
   
   .card__discount_position_top-left {
     top: 10px;
-    left: 9px;
+    left: 10px;
   }
   
   .card__discount_position_bottom-right {
     right: 12px;
-    bottom: 12px;
+    bottom: 10px;
   }
 
   .card__discount_position-box-2 {
     right: 12px;
-    bottom: 8px;
+    bottom: 10px;
 }
 
   .card__discount_position-box-8 {
@@ -573,6 +588,7 @@
 
   .cards__item-box-three {
     grid-row: span 1;
+    margin-bottom: 0;
   }
 
   .cards__item-box-two {
@@ -581,6 +597,7 @@
 
   .cards__item-box-five {
     grid-row: span 1;
+    margin-bottom: 0;
   }
 
   .cards__item-box-one,
@@ -590,7 +607,7 @@
     grid-template-columns: repeat(2, minmax(130px, 1fr));
     grid-template-rows: repeat(2, minmax(118px, 1fr));
     column-gap: 20px;
-    row-gap: 20px;
+    row-gap: 18px;
     border-radius: 8px;
   }
 
@@ -631,12 +648,12 @@
   
   .card_box-6 {
     max-height: 118px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
     padding-left: 10px;
   }
   
   .card_box-7 {
-    padding: 11px 15px;
+    padding: 10px 15px;
     background-position-y: 64%;
   }
   
@@ -651,6 +668,7 @@
     margin-left: 0;
     align-self: flex-start;
     background-position-x: 51%;
+    background-size: 150% 100%;
   }
 
   .card_box-10 {
@@ -678,7 +696,7 @@
 
   .card__subitle_box-7 {
     font-size: 12px;
-    padding: 8px 41px;
+    padding: 9px 41px 8px;
   }
   
 

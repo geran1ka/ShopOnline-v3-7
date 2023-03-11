@@ -248,7 +248,7 @@
 @media (max-width: 640px) {
   .header {
     padding-top: 21px;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
   }
 
   .header__container {
@@ -260,7 +260,7 @@
       "menu nav"
       "search search";
     align-items: self-end;
-    height: 125px;
+    height: 131px;
   }
 
   .header__logo {
@@ -272,13 +272,13 @@
   .header__link-menu {
     max-width: 79px;
     align-self: flex-start;
-    padding: 7px 14px 7px 31px;
+    padding: 7px 14px 5px 31px;
     font-size: 12px;
     border-radius: 4px;
   }
 
   .header__form {
-    align-self: flex-end;
+    align-self: center;
   }
 
   .header__link-menu::before {
