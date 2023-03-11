@@ -125,7 +125,7 @@
 }
 
 
-@media (max-width: 1640px) {
+@media (max-width: 1440px) {
   .header {
     padding-top: 34px;
     padding-bottom: 30px;
@@ -253,7 +253,7 @@
 
 @media (max-width: 640px) {
   .header {
-    padding-top: 20px;
+    padding-top: 21px;
     padding-bottom: 16px;
   }
 
