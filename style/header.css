@@ -1,6 +1,6 @@
 .header {
   padding-top: 27px;
-  padding-bottom: 46px;
+  padding-bottom: 45px;
 }
 
 .header__container {
@@ -141,10 +141,9 @@
     row-gap: 29px;
   }
 
-
   .header__logo {
     max-width: 190px;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
   }
 
   .header__link-menu {
@@ -155,11 +154,6 @@
   .header__nav-list {
     max-width: 294px;
     column-gap: 40px;
-  }
-
-  .header__btn-menu {
-    justify-self: start;
-    padding: 9px 29px 11px 61px;
   }
 
   .form__input {

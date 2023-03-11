@@ -115,8 +115,8 @@
 .card_box-9 {
   padding-bottom: 37px;
   background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-9.jpg) no-repeat center;
-  background-size: cover;
-  background-position-x: 72%;
+  background-size: 135% 100%;
+  background-position-x: 73%;
 }
 
 .card_box-10 {
@@ -139,7 +139,7 @@
   font-weight: 700;
 }
 
-.card__subitle_alternative-box-1 {
+.card__subitle-alternative-box-1 {
   font-size: 40px;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .card__subitle_box-4 {
-  padding: 24px 20px 25px;
+  padding: 23px 22px;
   font-size: 40px;
   background-color:#38c0eb;
   border-radius: inherit;
@@ -255,6 +255,7 @@
   .card_box-2 {
     max-height: 202px;
     padding-top: 55px;
+    padding-left: 11px;
   }
 
   .card_box-3 {
@@ -305,7 +306,7 @@
     font-size: 24px;
   }
 
-  .card__subitle_alternative-box-1 {
+  .card__subitle-alternative-box-1 {
     font-size: 30px;
   }
 
@@ -480,7 +481,7 @@
     line-height: 110%;
   }
 
-  .card__subitle_alternative-box-1,
+  .card__subitle-alternative-box-1,
   .card__subitle-alternative-box-4 {
     font-size: 26px;
   }
@@ -664,7 +665,7 @@
     font-size: 12px;
   }
   
-  .card__subitle_alternative-box-1,
+  .card__subitle-alternative-box-1,
   .card__subitle-alternative-box-4 {
     font-size: 16px;
   }
