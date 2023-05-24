@@ -32,13 +32,10 @@
 }
 
 .timer__count {
-  font-size: 60px;
-  height: 100%;
 }
 
 .timer__units {
   font-size: 32px;
-  height: 100%;
 }
 
 .timer__item-hours {
@@ -49,3 +46,58 @@
   grid-area: minutes;
   }
 
+  @media (max-width: 1440px) {
+
+    .timer {
+      grid-template-rows: min-content 52px;
+      gap: 10px 20px;
+    }
+
+    .timer__item {
+      font-size: 40px;
+    }
+
+    .timer__units {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 950px) {
+
+    .timer {
+      grid-template-rows: min-content 39px;
+      gap: 5px;
+    }
+
+    .timer__title {
+      font-size: 12px;
+    }
+
+    .timer__item {
+      font-size: 30px;
+    }
+
+    .timer__units {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 640px) {
+
+    .timer {
+      grid-template-rows: min-content 26px;
+      gap: 0px 5px;
+    }
+
+    .timer__title {
+      font-size: 8px;
+    }
+
+    .timer__item {
+      font-size: 20px;
+    }
+
+    .timer__units {
+      font-size: 12px;
+    }
+  }
