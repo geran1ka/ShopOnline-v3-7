@@ -11,6 +11,8 @@
 
   <link rel="stylesheet" href="index.css">
 
+  <script defer src="index.js"></script>
+
   <title>ShopOnline</title>
 </head>
 <body>
@@ -75,18 +77,25 @@
       </div>
     </div>
   </header>
+  
   <section class="hero">
     <div class="container hero__container">
       <div class="hero__content">
         <h1 class="title visually-hidden ">ShopOnline</h1>
         <p class="hero__title">-50% на все ноутбуки</p>
-        <div class="hero__timer">
-          <p class="hero__text">До конца акции:</p>
-          <div class="time">
-            <p class="time__text"><span class="time__text-big">3</span> дня</p>
-            <p class="time__text"><span class="time__text-big">8</span> часов</p>
-            <p class="time__text"><span class="time__text-big">43</span> минуты</p>
-          </div>
+        <div class="hero__timer timer" data-deadline ="2023/04/25">
+          <p class="timer__title">До конца акции:</p>
+          <p class="timer__item timer__item-days">
+            <span class="timer__count timer__count-days">3</span>
+            <span class="timer__units timer__units-days">дня</span>
+          </p>
+          <p class="timer__item timer__item-hours">
+            <span class="timer__count timer__count-hours">8</span>
+            <span class="timer__units timer__units-minutes">часов</span></p>
+          <p class="timer__item timer__item-minutes">
+            <span class="timer__count timer__count-minutes">43</span>
+            <span class="timer__units timer__units-minutes">минуты</span>
+          </p>
         </div>
       </div>
     </div>

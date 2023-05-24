@@ -1,0 +1,70 @@
+.timer {
+  display: grid;
+
+  justify-content: space-between;
+
+  gap: 5px 30px;
+  grid-template-areas: 
+  'title title title'
+  'days hours minutes';
+}
+
+.timer__title {
+  grid-area: title;
+  justify-self: center;
+  color: var(--main-color, #ffffff);
+}
+
+.timer__item {
+  display: flex;
+  gap: 6px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 130%;
+  height: 100%;
+  align-items: baseline;
+  color: var(--main-color, #ffffff);
+}
+
+.timer__item-days {
+  grid-area: days;
+}
+
+.timer__count {
+  font-size: 60px;
+  height: 100%;
+}
+
+.timer__count-days {
+
+}
+
+.timer__units {
+  font-size: 32px;
+  height: 100%;
+}
+
+.timer__units-days {
+
+}
+
+.timer__item-hours {
+  grid-area: hours;
+}
+
+.timer__count-hours {
+
+  }
+
+.timer__units-minutes {
+
+  }
+
+.timer__item-minutes {
+  grid-area: minutes;
+  }
+
+.timer__count-minutes {
+
+  }
+
