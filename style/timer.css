@@ -31,9 +31,6 @@
   grid-area: days;
 }
 
-.timer__count {
-}
-
 .timer__units {
   font-size: 32px;
 }
