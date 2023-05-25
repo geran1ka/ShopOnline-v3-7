@@ -1,5 +1,6 @@
 import {timerRender} from './timerRender.js';
 import {declOfNum} from './function/decl0fNum.js';
+import {getTwoDigits} from './function/getTwoDigits.js';
 
 export const timerControl = (timer, deadline) => {
   const timerElem = timerRender(timer);
@@ -34,19 +35,18 @@ export const timerControl = (timer, deadline) => {
       clearTimeout(intervalId);
       timer.classList.add('timer_disabled');
     } else if (time.timeRemaining <= oneDaysAllMs) {
-      timer.classList.add('timer_green');
-      timerElem.timerCountDays.textContent = hours.n < 10 ? '0' + hours.n : hours.n;
+      timerElem.timerCountDays.textContent = getTwoDigits(hours.n);
       timerElem.timerUnitsDays.textContent = hours.title;
-      timerElem.timerCountHours.textContent = minutes.n < 10 ? '0' + minutes.n : minutes.n;
+      timerElem.timerCountHours.textContent = getTwoDigits(minutes.n);
       timerElem.timerUnitsHours.textContent = minutes.title;
-      timerElem.timerCountMinutes.textContent = seconds.n < 10 ? '0' + seconds.n : seconds.n;
+      timerElem.timerCountMinutes.textContent = getTwoDigits(seconds.n);
       timerElem.timerUnitsMinutes.textContent = seconds.title;
     } else {
-      timerElem.timerCountDays.textContent = days.n < 10 ? '0' + days.n : days.n;
+      timerElem.timerCountDays.textContent = days.n;
       timerElem.timerUnitsDays.textContent = days.title;
-      timerElem.timerCountHours.textContent = hours.n < 10 ? '0' + hours.n : hours.n;
+      timerElem.timerCountHours.textContent = getTwoDigits(hours.n);
       timerElem.timerUnitsHours.textContent = hours.title;
-      timerElem.timerCountMinutes.textContent = minutes.n < 10 ? '0' + minutes.n : minutes.n;
+      timerElem.timerCountMinutes.textContent = getTwoDigits(minutes.n);
       timerElem.timerUnitsMinutes.textContent = minutes.title;
     }
   };

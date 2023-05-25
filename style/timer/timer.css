@@ -11,12 +11,6 @@
   'title title title'
   'days hours minutes';
   padding: 10px;
-  background-color: red;
-  opacity: 0.5;
-}
-
-.timer_green {
-  background-color: green;
 }
 
 .timer_disabled {
