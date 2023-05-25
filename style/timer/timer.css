@@ -10,8 +10,9 @@
   grid-template-areas: 
   'title title title'
   'days hours minutes';
-  padding: 20px;
+  padding: 10px;
   background-color: red;
+  opacity: 0.5;
 }
 
 .timer_green {
@@ -26,6 +27,7 @@
   grid-area: title;
   justify-self: center;
   color: var(--main-color, #ffffff);
+
 }
 
 .timer__item {
@@ -61,6 +63,8 @@
   @media (max-width: 1440px) {
 
     .timer {
+      max-width: 490px;
+      grid-template-columns: 110px 150px 150px;
       grid-template-rows: min-content 52px;
       gap: 10px 20px;
     }
@@ -77,6 +81,8 @@
   @media (max-width: 950px) {
 
     .timer {
+      max-width: 360px;
+      grid-template-columns: 95px 115px 115px;
       grid-template-rows: min-content 39px;
       gap: 5px;
     }
@@ -97,6 +103,8 @@
   @media (max-width: 640px) {
 
     .timer {
+      max-width: 260px;
+      grid-template-columns: 70px 80px 80px;
       grid-template-rows: min-content 26px;
       gap: 0px 5px;
     }

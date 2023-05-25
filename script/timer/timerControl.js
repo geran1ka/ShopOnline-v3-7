@@ -3,11 +3,14 @@ import {declOfNum} from './function/decl0fNum.js';
 
 export const timerControl = (timer, deadline) => {
   const timerElem = timerRender(timer);
+  const timeZoneMinutes = (deadline.getTimezoneOffset() + 180);
 
+  deadline.setMinutes(deadline.getMinutes() + timeZoneMinutes);
+  
   const getTimeRemeining = () => {
-    const deteStop = new Date(deadline).getTime();
-    const dateNow = Date.now();
-    const timeRemaining = deteStop - dateNow;
+    const dateNow = Date.now() + timeZoneMinutes * 1000 * 60;
+    const timeRemaining = deadline.getTime() - dateNow;
+
 
     const seconds = Math.floor(timeRemaining / 1000 % 60);
     const minutes = Math.floor(timeRemaining / 1000 / 60 % 60);
@@ -29,9 +32,7 @@ export const timerControl = (timer, deadline) => {
 
     if (time.timeRemaining < 0) {
       clearTimeout(intervalId);
-      timerElem.timerCountDays.textContent = '00';
-      timerElem.timerCountHours.textContent = '00';
-      timerElem.timerCountMinutes.textContent = '00';
+      timer.classList.add('timer_disabled');
     } else if (time.timeRemaining <= oneDaysAllMs) {
       timer.classList.add('timer_green');
       timerElem.timerCountDays.textContent = hours.n < 10 ? '0' + hours.n : hours.n;
