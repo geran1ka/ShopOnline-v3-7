@@ -47,7 +47,8 @@ const timerRender = () => {
 timerRender()
 */
 const timer = () => {
-  const dedline = document.querySelector('.timer').dataset.deadline;
+  const timerElem = document.querySelector('.timer');
+  const dedline = timerElem.dataset.deadline;
   const countDays = document.querySelector('.timer__count-days');
   const unitsDays = document.querySelector('.timer__units-days');
   const countHours = document.querySelector('.timer__count-hours');
@@ -76,20 +77,41 @@ const timer = () => {
     const hours = declOfNum(timer.hours, ['час', 'часа', 'часов']);
     const days = declOfNum(timer.days, ['день', 'дня', 'дней']);
     
+    
     countDays.textContent = days.n < 10 ? '0' + days.n : days.n;
     unitsDays.textContent = days.title;
     countHours.textContent = hours.n < 10 ? '0' + hours.n : hours.n;
     unitsHours.textContent =  hours.title;
     countMinutes.textContent = minutes.n < 10 ? '0' + minutes.n : minutes.n;
     unitsMinutes.textContent = minutes.title;
-
+    const oneDaysAllMs = 2678400097;
     const intervalId = setTimeout(start, 1000);
 
-    if (timer.timeRemaining <= 0) {
+    console.log('timer.timeRemaining: ', timer.timeRemaining);
+    if (timer.timeRemaining < 0) {
       clearTimeout(intervalId);
-      timerDays.textContent = '00';
-      timerHours.textContent = '00';
-      timerMinutes.textContent = '00';
+      countDays.textContent = '00';
+      countHours.textContent = '00';
+      countMinutes.textContent = '00';
+    } else if (timer.timeRemaining <= oneDaysAllMs ) {
+      timerElem.classList.add('timer_green')
+      console.log(timer.timeRemaining <= oneDaysAllMs);
+      console.log('oneDaysAllMs: ', oneDaysAllMs);
+      console.log('timer.timeRemaining: ', timer.timeRemaining);
+
+      countDays.textContent =  hours.n < 10 ? '0' + hours.n : hours.n;
+      unitsDays.textContent = hours.title;
+      countHours.textContent = minutes.n < 10 ? '0' + minutes.n : minutes.n;
+      unitsHours.textContent =  minutes.title;
+      countMinutes.textContent = seconds.n < 10 ? '0' + seconds.n : seconds.n;
+      unitsMinutes.textContent = seconds.title;
+    } else {
+      countDays.textContent = days.n < 10 ? '0' + days.n : days.n;
+      unitsDays.textContent = days.title;
+      countHours.textContent = hours.n < 10 ? '0' + hours.n : hours.n;
+      unitsHours.textContent =  hours.title;
+      countMinutes.textContent = minutes.n < 10 ? '0' + minutes.n : minutes.n;
+      unitsMinutes.textContent = minutes.title;
     }
   };
 
