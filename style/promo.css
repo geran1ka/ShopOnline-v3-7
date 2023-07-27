@@ -1,9 +1,9 @@
-.cards {
+.promo-cards {
   padding-top: 30px;
   padding-bottom: 140px;
 }
 
-.cards__list {
+.promo-cards__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(calc(100%/3 - 60px * 2), 1fr));
   grid-template-rows: repeat(2, 516px);
@@ -13,17 +13,17 @@
   grid-auto-flow: dense;
 }
 
-.cards__item {
+.promo-cards__item {
   display: grid;
 }
 
-.cards__item_size_two-colums {
+.promo-cards__item_size_two-colums {
   grid-column: span 2;
 }
 
-.cards__item-box-one,
-.cards__item-box-three,
-.cards__item-box-five {
+.promo-cards__item-box-one,
+.promo-cards__item-box-three,
+.promo-cards__item-box-five {
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 1fr));
   grid-template-rows: repeat(2, minmax(228px, 1fr));
@@ -31,15 +31,15 @@
   row-gap: 26px;
 }
 
-.card_size_two-rows {
+.promo-card_size_two-rows {
   grid-row: span 2;
 }
 
-.card_size_two-columns {
+.promo-card_size_two-columns {
   grid-column: span 2;
 }
 
-.card {
+.promo-card {
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -52,13 +52,13 @@
   background-size: cover;
 }
 
-.card_box-1 { 
+.promo-card_box-1 { 
   padding-bottom: 29px;
   background: linear-gradient(181.33deg, rgba(0, 0, 0, 0) 9.23%, rgba(0, 0, 0, 0.2) 98.87%), url(../img/block-1.jpg) no-repeat center;
   background-size: cover;
 }
 
-.card_box-2 {
+.promo-card_box-2 {
   align-items: flex-start;
   padding-top: 76px;
   padding-left: 14px;
@@ -66,7 +66,7 @@
   background-size: cover;
 }
 
-.card_box-3 {
+.promo-card_box-3 {
   align-self: end;
   max-height: 228px;
   background: linear-gradient(180.99deg, rgba(0, 0, 0, 0) 8.18%, rgba(0, 0, 0, 0.2) 99.15%), url(../img/block-3.jpg) no-repeat center;
@@ -74,7 +74,7 @@
   background-position-y: 65%;
 }
 
-.card_box-4 {
+.promo-card_box-4 {
   max-width: 516px;
   justify-self: end;
   padding-bottom: 21px;
@@ -83,7 +83,7 @@
   background-position-x: -7%;
 }
 
-.card_box-5 {
+.promo-card_box-5 {
   max-height: 228px;
   padding: 30px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../img/block-5.jpg) no-repeat center;
@@ -91,7 +91,7 @@
   background-position-y: 63%;
 }
 
-.card_box-6 {
+.promo-card_box-6 {
   align-self: end;
   padding: 30px 30px 38px;
   max-height: 228px;
@@ -100,32 +100,32 @@
   background-position-y: 56%;
 }
 
-.card_box-7 {
+.promo-card_box-7 {
   padding: 50px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../img/block-7.jpg) no-repeat center;
   background-size: cover;
   background-position-y: 59%;
 }
 
-.card_box-8 {
+.promo-card_box-8 {
   background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-8.jpg) no-repeat center;
   background-size: cover;
 }
 
-.card_box-9 {
+.promo-card_box-9 {
   padding-bottom: 37px;
   background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-9.jpg) no-repeat center;
   background-size: 135% 100%;
   background-position-x: 73%;
 }
 
-.card_box-10 {
+.promo-card_box-10 {
   background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../img/block-110.jpg) no-repeat center;
   background-size: cover;
 }
 
 /*------------------------ТЕКСТ ВНУТРИ КАРТОЧЕК--------------------*/
-.card__subitle {
+.promo-card__subitle {
   font-family: 'Lato', Arial, sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -133,39 +133,39 @@
   color: var(--main-color, #ffffff);
 }
 
-.card__subitle_alternative,
-.card__subitle_alternative-box-1,
-.card__subitle-alternative-box-4 {
+.promo-card__subitle_alternative,
+.promo-card__subitle_alternative-box-1,
+.promo-card__subitle-alternative-box-4 {
   font-weight: 700;
 }
 
-.card__subitle-alternative-box-1 {
+.promo-card__subitle-alternative-box-1 {
   font-size: 40px;
 }
 
-.card__subitle-alternative-box-4 {
+.promo-card__subitle-alternative-box-4 {
   font-size: 56px;
   line-height: 120%;
 }
 
-.card__subitle_box-4 {
+.promo-card__subitle_box-4 {
   padding: 23px 22px;
   font-size: 40px;
   background-color:#38c0eb;
   border-radius: inherit;
 }
 
-.card__subitle_box-5 {
+.promo-card__subitle_box-5 {
   font-size: 40px;
   font-weight: 700;
 }
 
-.card__subitle_box-6 {
+.promo-card__subitle_box-6 {
   font-size: 40px;
   font-weight: 700;
 }
 
-.card__subitle_box-7 {
+.promo-card__subitle_box-7 {
   padding: 30px 40px;
   font-size: 40px;
   font-weight: 700;
@@ -176,12 +176,12 @@
   border-radius: inherit;
 }
 
-.card__subitle_box-9 {
+.promo-card__subitle_box-9 {
   font-weight: 700;
 }
 
 /*------------------------Скидка--------------------*/
-.card__discount {
+.promo-card__discount {
   position: absolute;
   padding: 24px 8px;
   width: 88px;
@@ -194,45 +194,45 @@
   background-color: var(--orange-color, #ffbd13);
 }
 
-.card__discount_position_top-left,
-.card__discount_position-box-9 {
+.promo-card__discount_position_top-left,
+.promo-card__discount_position-box-9 {
   top: 20px;
   left: 20px;
 }
 
-.card__discount_position_bottom-right,
-.card__discount_position-box-8 {
+.promo-card__discount_position_bottom-right,
+.promo-card__discount_position-box-8 {
   right: 20px;
   bottom: 22px;
 }
 
-.card__discount_position-box-2 {
+.promo-card__discount_position-box-2 {
   right: 20px;
   bottom: 28px;
 }
 
 @media (max-width: 1440px) {
-.cards {
+.promo-cards {
   padding-top: 11px;
 }
 
-  .cards__list {
+  .promo-cards__list {
     grid-template-columns: minmax(464px, 1fr)  1fr;
     grid-template-rows:   446px 410px 450px;
     row-gap: 22px;
     column-gap: 30px;
   }
 
-  .cards__item-box-one,
-  .cards__item-box-three,
-  .cards__item-box-five {
+  .promo-cards__item-box-one,
+  .promo-cards__item-box-three,
+  .promo-cards__item-box-five {
     grid-template-columns: repeat(2, minmax(156px, 1fr));
     grid-template-rows: repeat(2, minmax(156px, 1fr));
     column-gap: 60px;
     row-gap: 22px;
   }
 
-  .cards__item-box-four {
+  .promo-cards__item-box-four {
     order: 5;
   }
 
