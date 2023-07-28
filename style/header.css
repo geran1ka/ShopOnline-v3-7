@@ -21,11 +21,10 @@
 
 .header__logo {
   grid-area: logo;
-  align-self: flex-end;
-  padding: 3px 0;
+  padding: 13px 0 7px;
 }
 
-.header__link-menu {
+.header__btn-menu {
   position: relative;
   justify-self: center;
   grid-area: menu;
@@ -41,7 +40,7 @@
   border-radius: 10px;
 }
 
-.header__link-menu::before {
+.header__btn-menu::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -146,7 +145,7 @@
     padding-bottom: 8px;
   }
 
-  .header__link-menu {
+  .header__btn-menu {
     justify-self: unset;
     padding-left: 60px;
   }
@@ -183,7 +182,7 @@
     padding: 5px 0;
   }
 
-  .header__link-menu {
+  .header__btn-menu {
     max-width: 115px;
     padding: 8px 22px 10px 49px;
     font-size: 16px;
@@ -269,7 +268,7 @@
     align-self: flex-start;
   }
 
-  .header__link-menu {
+  .header__btn-menu {
     max-width: 79px;
     align-self: flex-start;
     padding: 7px 14px 7px 31px;

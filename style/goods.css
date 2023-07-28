@@ -1,0 +1,91 @@
+.goods {
+  padding-top: 50px;
+  padding-bottom: 140px;
+}
+
+.goods-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.goods__title {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  color: var(--second-color, #2d2d2d);
+}
+
+.goods__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 420px;
+  gap: 50px 30px;
+}
+
+.goods__item {
+
+}
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item__title {
+  order: 2;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 22px;
+  line-height: 100%;
+  color: var(--second-color, #2d2d2d);
+}
+
+.item__img-wrapper {
+  position: relative;
+  margin-bottom: 5px;
+  line-height: 0;
+}
+
+.item__img {
+  border-radius: 14px;
+}
+
+.item__discount {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 24px 8px;
+  width: 88px;
+  height: 88px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 130%;
+  border-radius: 50%;
+  color: var(--main-color, #ffffff);
+  background-color: var(--orange-color, #ffbd13);
+}
+
+.item__price-wrapper {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.item__price {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: var(--second-color, #2d2d2d);
+}
+
+.item__price-discount {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--second-color, #2d2d2d);
+  text-decoration: line-through;
+}
